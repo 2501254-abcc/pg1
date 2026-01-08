@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲーム管理アプリ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎮 ゲーム管理アプリ</h1>
+
+    <div class="input-area">
+        <div class="form-group">
+            <label for="playDate">プレイ日</label>
+            <input type="date" id="playDate">
+        </div>
+        <div class="form-group">
+            <label for="gameTitle">ゲームタイトル</label>
+            <input type="text" id="gameTitle" placeholder="例: スーパーマリオブラザーズ">
+        </div>
+        <div class="form-group">
+            <label for="playTime">プレイ時間（分）</label>
+            <input type="number" id="playTime" placeholder="例: 60">
+        </div>
+        <div class="form-group">
+            <label for="gameNotes">メモ・進捗</label>
+            <textarea id="gameNotes" rows="3" placeholder="例: 1-1クリア。ジャンプの練習をした。"></textarea>
+        </div>
+        <button id="saveBtn">記録を保存</button>
+    </div>
+
+    <hr>
+
+    <h2>プレイ履歴</h2>
+    <div id="storageInfo">使用量計算中...</div>
+    <ul id="recordList" class="record-list">
+        </ul>
+</div>
+</body>
+</html>
