@@ -48,8 +48,10 @@ saveBtn.addEventListener('click', () => {
         notes: notes
     };
 
-    // 入力値を配列に追加し、ローカルストレージに保存
+    // 入力値を配列に追加
     myRecords.unshift(newRecord);
+    console.log(myRecords);
+    // ローカルストレージに保存
     saveToStorage();
     // 入力欄をリセット
     gameTitleInput.value = '';
