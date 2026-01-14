@@ -36,7 +36,7 @@ saveBtn.addEventListener('click', () => {
     // タイトルまたは時間が未入力の場合はアラートで知らせる
     if (title === '' || time === '') {
         alert('タイトルと時間は必須入力です');
-        return; 
+        return;
     }
 
     // 全ての入力データを１つのオブジェクトとしてまとめる
